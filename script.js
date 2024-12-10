@@ -15,9 +15,8 @@ function atualizarCronometro() {
       `${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
   }
   
-  // Atualizar a cada segundo
+  
   setInterval(atualizarCronometro, 1000);
   
-  // Chamar a função ao carregar a página
   atualizarCronometro();
   
