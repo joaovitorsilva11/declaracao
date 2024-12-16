@@ -1,4 +1,4 @@
-// Função para criar e soltar corações (já existente)
+// Função para criar e soltar corações
 function createHeart() {
   const heart = document.createElement('div');
   heart.classList.add('heart');
@@ -22,18 +22,33 @@ function createHeart() {
 // Gera corações continuamente em intervalos
 setInterval(createHeart, 300);
 
-// Função para atualizar o cronômetro desde uma data específica (já existente)
+// Função para atualizar o cronômetro desde uma data específica
 function atualizarCronometro() {
   const inicio = new Date('2018-12-16T00:00:00');
   const agora = new Date();
-  const diferenca = agora - inicio;
 
-  const anos = Math.floor(diferenca / (1000 * 60 * 60 * 24 * 365.25)); // Considera anos bissextos
-  const meses = Math.floor((diferenca % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44)); // Média de dias por mês
-  const dias = Math.floor((diferenca % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
-  const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
-  const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+  // Calcular a diferença de anos, meses e dias
+  let anos = agora.getFullYear() - inicio.getFullYear();
+  let meses = agora.getMonth() - inicio.getMonth();
+  let dias = agora.getDate() - inicio.getDate();
+
+  // Ajuste se a diferença de meses for negativa
+  if (meses < 0) {
+    anos--;
+    meses += 12;
+  }
+
+  // Ajuste se a diferença de dias for negativa
+  if (dias < 0) {
+    meses--;
+    const ultimoMes = new Date(agora.getFullYear(), agora.getMonth(), 0);
+    dias += ultimoMes.getDate();
+  }
+
+  // Calcular horas, minutos e segundos
+  const horas = agora.getHours();
+  const minutos = agora.getMinutes();
+  const segundos = agora.getSeconds();
 
   document.getElementById('contador').textContent =
     `${anos} anos, ${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
