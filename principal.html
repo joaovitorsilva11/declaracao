@@ -4,24 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Declaração</title>
+  <!-- Incluir o link para o Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="hearts-container"></div>
+  <div class="hearts-container"></div>
   <div class="container">
-    <div class="foto">
-      <img src="img/declaracao.jpg" alt="">
+    <!-- Carrossel de Imagens (Bootstrap) -->
+    <div id="carrossel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/declaracao.jpg" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="img/imagem.png" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="img/declaracao3.jpg" class="d-block w-100" alt="Imagem 3">
+        </div>
+        <!-- Adicione mais imagens aqui, se desejar -->
+      </div>
+      <!-- Controles -->
+      <a class="carousel-control-prev" href="#carrossel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carrossel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
     </div>
+
+    <!-- Cronômetro -->
     <div class="cronometro">
       <p>Juntos a <br><span id="contador"></span></p>
     </div>
+
+    <!-- Texto -->
     <div class="texto">
       <p>Espaço para texto!</p>
     </div>
+
+    <!-- Vídeo -->
     <div class="video">
       <iframe src="https://www.youtube.com/embed/5iUoik-9hVI" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
+
+  <!-- Incluir o Bootstrap JS e dependências do jQuery e Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Seu script personalizado -->
   <script src="script.js"></script>
 </body>
 </html>
