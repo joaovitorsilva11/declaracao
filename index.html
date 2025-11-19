@@ -1,16 +1,231 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Declaração</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nosso Mês — Uma pequena homenagem</title>
+
+<style>
+:root{
+  --bg:#0d1023;
+  --card:#14182d;
+  --accent:#ff6b9e;
+  --soft:#ffc4dd33;
+  --text:#f6f2f7;
+  --muted:#c7c1cb;
+  --radius:18px;
+  --shadow:0 8px 26px rgba(0,0,0,0.35);
+  --font:'Segoe UI', Poppins, Arial;
+}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font);
+  padding:28px;
+  display:flex;
+  justify-content:center;
+}
+.wrap{width:100%;max-width:900px;}
+h1{
+  font-size:32px;
+  margin-bottom:6px;
+  color:var(--accent);
+  text-shadow:0 0 12px #ff6b9e55;
+}
+p{line-height:1.6;}
+.romantic-box{
+  background:var(--card);
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  border:1px solid #ffffff0a;
+}
+h2{
+  margin-top:40px;
+  font-size:26px;
+  color:var(--accent);
+  text-shadow:0 0 10px #ff6b9e33;
+}
+h3{margin-top:20px;margin-bottom:6px;}
+
+/* Container dos calendários lado a lado */
+.calendar-wrap{
+  display:flex;
+  gap:40px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+/* Cada bloco individual do calendário */
+.calendar-block{
+  flex:1;
+  min-width:300px;
+}
+
+/* Calendário */
+.calendar-table{
+  width:100%;
+  border-collapse:collapse;
+  background:var(--card);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.calendar-table th{
+  background:#ffffff0a;
+  padding:8px;
+}
+.calendar-table td{
+  padding:8px;
+  text-align:center;
+}
+.highlight{
+  background:var(--soft);
+  color:var(--accent);
+  font-weight:bold;
+  border-radius:8px;
+}
+ul{color:var(--muted);}
+
+/* Carrossel */
+#carousel{
+  margin-top:20px;
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  width:100%;
+}
+
+#carousel-track{
+  display:flex;
+  width:100%;
+  transition:0.6s ease;
+}
+
+#carousel-track img{
+  width:100%;
+  height:50rem;
+  object-fit:cover;
+  flex-shrink:0; /* impede que a imagem diminua */
+}
+
+/* Modal */
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+.modal.active{display:flex}
+.modal__img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:var(--radius);
+}
+</style>
 </head>
 <body>
-    <a href="principal.html">
-        <button>
-            Clique aqui ❤️❤️
-        </button>
-    </a>
+<main class="wrap">
+
+<h1>Olá meu amor — nosso primeiro mês</h1>
+<p>Uma pequena homenagem para lembrar encontros, risos e fotos.</p>
+
+<div class="romantic-box">
+    <p>Olá, meu amor!</p>
+    <p>Ontem completamos nosso primeiro mês juntos, e eu não poderia deixar essa data passar em branco.</p>
+
+    <p>Quis preparar essa pequena demonstração de carinho para lembrar o quanto sou grato por ter te encontrado. 
+    Quem diria que, em um bar da Estância, eu conheceria a parceira da minha vida? 
+    E como é incrível pensar que, em tão pouco tempo, tivemos tantos encontros
+    e em cada um deles eu me apaixono ainda mais por você.</p>
+
+    <p>Que venham muitos outros meses, muitos anos e uma vida inteira ao seu lado.</p>
+
+    <p><strong>Eu te amo, meu amor! ❤️</strong></p>
+</div>
+
+<h2>Calendário — Outubro e Novembro 2025</h2>
+
+<div class="calendar-wrap">
+
+  <!-- Outubro -->
+  <div class="calendar-block">
+    <h3>Outubro 2025</h3>
+    <table class="calendar-table">
+      <tr><th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th></tr>
+      <tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+      <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+      <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td class="highlight">18</td><td class="highlight">19</td></tr>
+      <tr><td>20</td><td>21</td><td>22</td><td class="highlight">23</td><td>24</td><td class="highlight">25</td><td class="highlight">26</td></tr>
+      <tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr>
+    </table>
+    <ul>
+      <li><strong>18</strong> — Dia em que conheci a pessoal mais lindo do mundo</li>
+      <li><strong>19</strong> — Bar na Asa Norte</li>
+      <li><strong>23</strong> — 1° Jantar nosso</li>
+      <li><strong>25</strong> — Churrasco TI</li>
+      <li><strong>26</strong> — Passei para dar um beijo</li>
+    </ul>
+  </div>
+
+  <!-- Novembro -->
+  <div class="calendar-block">
+    <h3>Novembro 2025</h3>
+    <table class="calendar-table">
+      <tr><th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sáb</th></tr>
+      <tr><td></td><td></td><td></td><td></td><td></td><td class="highlight">1</td><td class="highlight">2</td></tr>
+      <tr><td class="highlight">3</td><td>4</td><td>5</td><td>6</td><td class="highlight">7</td><td class="highlight">8</td><td>9</td></tr>
+      <tr><td>10</td><td class="highlight">11</td><td>12</td><td>13</td><td>14</td><td class="highlight">15</td><td class="highlight">16</td></tr>
+      <tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr>
+      <tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+    </table>
+    <ul>
+      <li><strong>1</strong> — Conheceu parte da minha família materna</li>
+      <li><strong>1</strong> — Pizza na Duda</li>
+      <li><strong>7</strong> — Encontro na Creperia</li>
+      <li><strong>8</strong> — Passou o dia lá em casa</li>
+      <li><strong>8</strong> — Baile dos Enfermeiros</li>
+      <li><strong>11</strong> — Jantou em casa comigo</li>
+      <li><strong>15</strong> — Conheceu minha família paterna</li>
+      <li><strong>16</strong> — Pizzaria</li>
+    </ul>
+  </div>
+
+</div>
+
+<h2>Carrossel</h2>
+<div id="carousel">
+  <div id="carousel-track">
+    <img src="beijo.jpeg">
+    <img src="churrasco.jpeg">
+    <img src="espelho.jpeg">
+    <img src="mao-dada.jpeg">
+  </div>
+</div>
+
+</main>
+
+<div class="modal" id="modal"><img id="modalImg" class="modal__img"></div>
+
+<script>
+// Modal
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modalImg');
+function openModal(src){ modalImg.src = src; modal.classList.add('active'); }
+modal.addEventListener('click', () => modal.classList.remove('active'));
+
+// Carrossel automático
+const track = document.getElementById('carousel-track');
+let index = 0;
+setInterval(() => {
+  index = (index + 1) % track.children.length;
+  track.style.transform = `translateX(${-index * 100}%)`;
+}, 3000);
+</script>
+
 </body>
 </html>
