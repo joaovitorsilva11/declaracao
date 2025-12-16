@@ -1,0 +1,85 @@
+#quiz-container {
+  background: var(--card);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-top: 32px;
+}
+
+#quiz-container p#question-text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--accent);
+  text-shadow: 0 0 8px #ff6b9e88;
+}
+
+#quiz-container button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px 20px;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  background-color: var(--card);
+  color: var(--accent);
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 16px #ff6b9e44;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  text-align: center;
+}
+
+#quiz-container button:hover,
+#quiz-container button:focus {
+  background-color: var(--accent);
+  color: var(--bg);
+  box-shadow: 0 8px 26px #ff6b9eaa;
+  transform: scale(1.05);
+  outline: none;
+}
+
+#quiz-container button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px #ff6b9e99;
+}
+
+/* Botão selecionado (resposta correta) */
+#quiz-container button.selected {
+  background-color: #34a853; /* verde */
+  border-color: #2e7d32;
+  color: var(--text);
+  box-shadow: 0 6px 20px rgba(52,168,83,0.8);
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Botão errado */
+#quiz-container button.wrong {
+  background-color: #ea4335; /* vermelho */
+  border-color: #b71c1c;
+  color: var(--text);
+  box-shadow: 0 6px 20px rgba(234,67,53,0.8);
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Mensagem de resultado */
+#quiz-result {
+  margin-top: 32px;
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0 0 12px #ff6b9ebb;
+}

@@ -1,0 +1,8 @@
+@import "./base/variables.css";
+@import "./base/base.css";
+
+@import "./components/calendar.css";
+@import "./components/carousel.css";
+@import "./components/modal.css";
+@import "./components/audio.css";
+@import "./components/quiz.css";

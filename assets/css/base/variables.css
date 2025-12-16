@@ -1,0 +1,11 @@
+:root{
+  --bg:#0d1023;
+  --card:#14182d;
+  --accent:#ff6b9e;
+  --soft:#ffc4dd33;
+  --text:#f6f2f7;
+  --muted:#c7c1cb;
+  --radius:18px;
+  --shadow:0 8px 26px rgba(0,0,0,0.35);
+  --font:'Segoe UI', Poppins, Arial;
+}

@@ -1,0 +1,31 @@
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font);
+  padding:28px;
+  display:flex;
+  justify-content:center;
+}
+
+.wrap{
+  width:100%;
+  max-width:900px;
+}
+
+h1{
+  font-size:32px;
+  margin-bottom:6px;
+  color:var(--accent);
+  text-shadow:0 0 12px #ff6b9e55;
+}
+
+h2{
+  margin-top:40px;
+  font-size:26px;
+  color:var(--accent);
+  text-shadow:0 0 10px #ff6b9e33;
+}
+
+p{ line-height:1.6; }
+ul{ color:var(--muted); }
