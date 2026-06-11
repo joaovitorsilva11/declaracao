@@ -8,7 +8,16 @@
 </head>
 <body>
 
-<main class="wrap">
+  <div id="timer" class="blocked-overlay">
+    <div class="blocked-card">
+      <h1>Conteúdo bloqueado</h1>
+      <p>Esta página será liberada no horário programado.</p>
+      <div id="time" class="blocked-countdown">00:00:00</div>
+      <p>Aguarde até a data e hora liberadas para acessar o conteúdo.</p>
+    </div>
+  </div>
+
+<main id="content" class="wrap hidden">
 
   <header class="page-header">
     <div class="hero-card">
@@ -40,6 +49,7 @@
 </main>
 
 <script type="module" src="assets/js/main.js"></script>
+<script type="module" src="assets/js/timer.js"></script>
 
 </body>
 </html>
