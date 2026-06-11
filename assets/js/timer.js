@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // DATA E HORA ALVO
-  const targetDate = new Date('2026-01-18T05:50:00');
+  const targetDate = new Date('2026-06-12T18:00:00');
   //2026-01-18T05:50:00   
   //2026-06-12T18:00:00
 
