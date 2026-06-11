@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trilha sonora — Nossa música</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<main class="wrap">
+  <header class="page-header">
+    <div class="hero-card">
+      <h1>Trilha sonora</h1>
+      <p>Uma página dedicada à música que acompanha esta homenagem.</p>
+    </div>
+    <nav class="page-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="historia.html">Nossa história</a>
+      <!-- <a href="memorias.html">Memórias</a> -->
+      <a href="galeria.html">Galeria</a>
+      <a href="quiz.html">Quiz especial</a>
+    </nav>
+  </header>
+
+  <section class="section-card music-section">
+    <h2>Ouça nossa trilha</h2>
+    <p>Toque a música enquanto aprecia cada lembrança desta página.</p>
+
+    <div class="custom-player">
+      <audio id="audio" src="assets/audio/nossa-trilha.mp3"></audio>
+      <button id="play-pause" aria-label="Play/Pause">▶</button>
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" min="0" max="100" step="1" />
+      <span id="duration">2:53</span>
+    </div>
+  </section>
+</main>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

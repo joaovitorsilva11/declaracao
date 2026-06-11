@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz especial — Teste nossas memórias</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<main class="wrap">
+  <header class="page-header">
+    <div class="hero-card">
+      <h1>Quiz especial</h1>
+      <p>Um quiz divertido para testar quanto você lembra dos nossos momentos.</p>
+    </div>
+    <nav class="page-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="historia.html">Nossa história</a>
+      <!-- <a href="memorias.html">Memórias</a> -->
+      <a href="galeria.html">Galeria</a>
+      <a href="trilha-sonora.html">Trilha sonora</a>
+    </nav>
+  </header>
+
+  <section class="section-card">
+    <h2>Responda e descubra</h2>
+    <p>Selecione uma resposta em cada pergunta e veja quantos acertos você consegue.</p>
+
+    <div id="quiz-container">
+      <p id="question-text"></p>
+      <div id="options-container"></div>
+    </div>
+
+    <div id="quiz-result" style="display:none;">
+      <h3>Você acertou <span id="score"></span> de 5!</h3>
+    </div>
+
+    <div id="special-image" style="display:none; text-align:center; margin-top:20px;">
+      <img src="assets/images/presente.png" alt="Surpresa Especial!" style="max-width:100%; border-radius: var(--radius); box-shadow: var(--shadow);" />
+    </div>
+  </section>
+</main>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

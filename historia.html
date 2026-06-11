@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nossa História — Uma pequena homenagem</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<main class="wrap">
+  <header class="page-header">
+    <div class="hero-card">
+      <h1>Nossa história</h1>
+      <p>Uma página dedicada ao sentimento e às memórias que inspiram esta homenagem.</p>
+    </div>
+    <nav class="page-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <!-- <a href="memorias.html">Memórias</a> -->
+      <a href="galeria.html">Galeria</a>
+      <a href="trilha-sonora.html">Trilha sonora</a>
+      <a href="quiz.html">Quiz especial</a>
+    </nav>
+  </header>
+
+  <section class="section-card">
+    <h2>Selecione seu texto</h2>
+    <p>Escolha a versão do texto desejada para ler sua declaração de amor.</p>
+
+    <div class="text-switcher">
+      <label for="text-type">Tipo de texto</label>
+      <select id="text-type" aria-label="Selecionar tipo de texto">
+        <option value="base">Início</option>
+        <option value="doisMeses">2 Meses</option>
+        <option value="pedido">Pedido Namoro</option>
+        <option value="quatroMeses">4 Meses</option>
+        <option value="cincoMeses">5 Meses</option>
+        <option value="seteMeses">7 Meses</option>
+        <option value="diaDosNamorados">Dia dos Namorados</option>
+        <option value="declaracao">Declaração curta</option>
+      </select>
+
+      <div id="text-output" class="text-output"></div>
+    </div>
+  </section>
+</main>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

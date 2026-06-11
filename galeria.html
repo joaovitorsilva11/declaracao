@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria — Fotos e lembranças</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+<main class="wrap">
+  <header class="page-header">
+    <div class="hero-card">
+      <h1>Galeria de memórias</h1>
+      <p>Fotos selecionadas com visualização ampliada para reviver nossos melhores momentos.</p>
+    </div>
+    <nav class="page-nav" aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="historia.html">Nossa história</a>
+      <!-- <a href="memorias.html">Memórias</a> -->
+      <a href="trilha-sonora.html">Trilha sonora</a>
+      <a href="quiz.html">Quiz especial</a>
+    </nav>
+  </header>
+
+  <section class="section-card">
+    <h2>Fotos especiais</h2>
+    <p>Role pelas imagens ou toque em qualquer foto para vê-la em tamanho maior.</p>
+
+    <div id="carousel">
+      <div id="carousel-track">
+        <img src="assets/images/beijo.jpeg" alt="Beijo" onclick="openModal(this.src)" />
+        <img src="assets/images/churrasco.jpeg" alt="Churrasco" onclick="openModal(this.src)" />
+        <img src="assets/images/espelho.jpeg" alt="Espelho" onclick="openModal(this.src)" />
+        <img src="assets/images/mao-dada.jpeg" alt="Mão dada" onclick="openModal(this.src)" />
+        <img src="assets/images/beijo-bochecha.jpeg" alt="Beijo na bochecha" onclick="openModal(this.src)" />
+        <img src="assets/images/flores-olhar.jpeg" alt="Flores e olhar" onclick="openModal(this.src)" />
+        <img src="assets/images/lingua.jpeg" alt="Brincadeira com língua" onclick="openModal(this.src)" />
+        <img src="assets/images/ombro.jpeg" alt="Ombro" onclick="openModal(this.src)" />
+        <img src="assets/images/buque-olhar.jpeg" alt="Buquê e olhar" onclick="openModal(this.src)" />
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="modal">
+    <img id="modalImg" class="modal__img" alt="Imagem ampliada" />
+  </div>
+</main>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
