@@ -22,8 +22,28 @@ export function initQuiz() {
     },
     {
       question: "Quantos dias tem o nosso foguinho (não vale roubar)?",
-      options: ["A: 55", "B: 56", "C: 57", "D: 58"],
+      options: ["A: 228", "B: 229", "C: 230", "D: 231"],
       answer: 2
+    },
+    {
+      question: "Para onde foi a nossa primeira viagem?",
+      options: ["A: Caldas Novas", "B: Formosa", "C: Xique-Xique", "D: Pirenópolis"],
+      answer: 0
+    },
+	{
+      question: "Que horas eu te pedi em namoro?",
+      options: ["A: 06:15", "B: 5:55", "C: 07:35", "D: 6:45"],
+      answer: 1
+    },
+	{
+      question: "Quem é a melhor namorada do mundo?",
+      options: ["A: ", "B: ", "C: ", "D: Você!"],
+      answer: 3
+    },
+	{
+      question: "Quem ama mais?",
+      options: ["A: ", "B: João", "C: Ilana", "D: "],
+      answer: 1
     }
   ];
 
