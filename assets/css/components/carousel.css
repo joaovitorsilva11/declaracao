@@ -16,13 +16,13 @@
 #carousel-track img {
   width: 100%;
   aspect-ratio: 4 / 5; /* mantém proporção bonita no celular */
-  object-fit: cover;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
 /* Ajustes para telas maiores */
 @media (min-width: 768px) {
   #carousel-track img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
   }
 }

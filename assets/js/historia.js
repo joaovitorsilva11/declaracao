@@ -5,10 +5,11 @@ export function initHistoryTextSwitcher() {
 
   const texts = {
     base: {
-      heading: 'Texto base',
+      heading: 'Início',
       paragraphs: [
-        'Bem-vinda à história que escrevemos juntos. Esta página traz um texto base e permite alternar entre versões diferentes, como pedido de namoro e declaração especial.',
-        'Use o seletor abaixo para ver cada texto. Assim você pode escolher o tom certo para o momento e reviver cada sentimento com clareza.'
+        'Bem-vinda ao nossa história meu amor.',
+        'Aqui estão guardadas algumas das palavras que traduzem o que sinto por você.',
+        'Cada texto conta um pedaço do nosso amor e relembra momentos que tornaram nossa caminhada tão especial.'
       ]
     },
     doisMeses: {
